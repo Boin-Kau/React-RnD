@@ -38,19 +38,24 @@ a {
 }
 
 header {
+  background-color: var(--gray--dark--color);
+}
+
+header .header_container {
   display: flex;
   justify-content: space-between;
   background-color: var(--gray--dark--color);
   color: var(--white--color);
   height: var(--header--height);
-  padding: 0 var(--container--margin);
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
-header .header_left {
+header .header_container .header_left {
   display: flex;
 }
 
-header .header_left .logo {
+header .header_container .header_left .logo {
   background-color: var(--orange--color);
   display: flex;
   align-items: center;
@@ -58,16 +63,33 @@ header .header_left .logo {
   font-size: 36px;
 }
 
-header .header_left .logo .logo_title {
+header .header_container .header_left .logo .logo_title {
   font-size: var(--font--logo);
   text-transform: uppercase;
   margin-left: 8px;
 }
 
-header .header_left ul {
+header .header_container .header_left ul {
   display: flex;
+  font-size: var(--font--body1);
+  height: 100%;
 }
 
-header .header_left ul a {
+header .header_container .header_left li {
+  border-right: 1px solid var(--black--color);
+  padding: 12px 32px;
+}
+
+header .header_container .header_left li.active {
+  background-color: var(--black--color);
+}
+
+header .header_container .header_left ul a {
   color: var(--white--color);
+}
+
+header. .header_container .header_center {
+  display: flex;
+  flex: 1;
+  padding: 9px 10px;
 }
