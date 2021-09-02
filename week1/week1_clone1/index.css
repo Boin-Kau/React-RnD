@@ -77,12 +77,14 @@ a {
 }
 
 
+/* Header 시작 */
 header {
 	display: flex;
 	height: 68px;
 	align-items: center;
 	padding: 0 4%;
-
+	position: fixed;
+	top: 0;
 }
 
 header #main_logo a img {
@@ -149,6 +151,10 @@ header #btn_end #user_toggle button {
 	margin-left: calc(var(--margin--size) / 3);
 	font-size: var(--font--extra--medium);
 }
+/* Header 끝 */
 
 
-
+/* Main 시작 */
+#container_main #container_home #top_contents img {
+	width: 100%;
+}
