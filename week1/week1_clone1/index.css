@@ -44,9 +44,111 @@ table {
 
 /* Css 커스텀 시작 */
 
+:root {
+	/* Color */
+	--black--color:#141414;
+	--white--color:#fff;
+	--dark--gray--color:#e5e5e5;
+
+	/* Font Size */
+	--font--extra--large:20px;
+	--font--large:18px;
+	--font--extra--medium:16px;
+	--font--medium:14px;
+
+	/* margin */
+	--margin--size:20px;
+}
+
+body {
+	background-color: black;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
 a {
   /* a태그 밑줄 제거 */
   text-decoration: none;
 }
+
+
+header {
+	display: flex;
+	height: 68px;
+	align-items: center;
+	padding: 0 4%;
+
+}
+
+header #main_logo a img {
+	width: 92.5px;
+	height: 25px;
+	margin-right: 25px;
+}
+
+header #category {
+	flex: 1;
+}
+
+header #category ul {
+	display: flex;
+}
+
+header #category ul li a {
+	margin-left: var(--margin--size);
+	color: var(--dark--gray--color);
+	font-size: var(--font--medium);
+}
+
+header #category ul li a.active {
+	color: var(--white--color);
+}
+
+header #btn_end {
+	display: flex;
+	align-items: center;
+}
+
+header #btn_end a {
+	color: var(--white--color);
+}
+
+header #btn_end .btn_end_child {
+	margin-right: var(--margin--size);
+}
+
+header #btn_end #search_btn {
+	font-size: var(--font--large);
+	padding: 0 6px;
+}
+
+header #btn_end #kids {
+	font-size: var(--font--medium);
+}
+
+header #btn_end #notification {
+	font-size: var(--font--extra--large);
+	padding: 0 6px;
+}
+
+header #btn_end #user_toggle {
+	display: flex;
+}
+
+header #btn_end #user_toggle img {
+	border-radius: 4px;
+}
+
+header #btn_end #user_toggle button {
+	color: var(--white--color);
+	margin-left: calc(var(--margin--size) / 3);
+	font-size: var(--font--extra--medium);
+}
+
 
 
