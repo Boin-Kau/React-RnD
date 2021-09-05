@@ -49,6 +49,7 @@ table {
 	--black--color:#141414;
 	--white--color:#fff;
 	--dark--gray--color:#e5e5e5;
+	--gray--btn--color:rgba(109,109,110,0.7);
 
 	/* Font Size */
 	--font--extra--large:20px;
@@ -59,9 +60,13 @@ table {
 	/* margin */
 	--margin--size:20px;
 }
+html {
+	font-size: 10px;
+}
 
 body {
 	background-color: black;
+	width: 100%;
 }
 
 button {
@@ -84,7 +89,11 @@ header {
 	align-items: center;
 	padding: 0 4%;
 	position: fixed;
+	z-index: 500;
 	top: 0;
+	left: 0;
+	right: 0;	
+	border: 1px solid red;
 }
 
 header #main_logo a img {
@@ -155,6 +164,117 @@ header #btn_end #user_toggle button {
 
 
 /* Main 시작 */
-#container_main #container_home #top_contents img {
+
+/* Main - Top Contents */
+#top_contents img {
 	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 1;
+}
+
+#top_contents_wrapper {
+	position: absolute;
+	z-index: 2;
+	top: 9vw;
+	border: 1px solid blue;
+}
+
+#top_img_metadata {
+	padding-left: 4%;
+	width: 36%;
+}
+
+#top_img_metadata_title {
+	/* 임시 border */
+	border: 1px solid red;
+}
+
+#top_img_metadata_title img {
+	min-height: 13.2vw;
+	margin-bottom: 1.2vw;
+}
+
+#top_img_metadata_contents {
+	margin-top: .5vw;
+	color: var(--white--color);
+	font-size: 1.4vw;
+	line-height: normal;
+	/* 임시 border */
+	border: 1px solid yellow;
+}
+
+#top_img_metadata_btns {
+	margin-top: 1.5vw;
+	/* 임시 border */
+	border: 1px solid orange;
+	display: flex;
+}
+
+#top_img_metadata_btns .metadata_btn {
+	padding: 1.3rem 3.7rem 1.3rem 3.3rem;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+#top_img_metadata_btns #play_link #play_btn {
+	background-color: var(--white--color);
+	color: var(--black--color);
+	display: flex;
+}
+
+#top_img_metadata_btns .btn_space {
+	width: 1rem;
+}
+
+#top_img_metadata_btns #detail {
+	display: flex;
+	background-color: var(--gray--btn--color);
+	color: var(--white--color);
+}
+
+/* Main - Playing Contents */
+#famous_contents {
+
+}
+
+.type_grid_basic {
+	margin-top: 3vw;
+	
+	/* 임시 border */
+	border: 1px dotted skyblue;
+}
+
+.type_grid_basic h2 {
+	margin-bottom: 1.5rem;
+	padding: 0 4%;
+}
+
+.type_grid_basic .contents_title {
+	color: var(--white--color);
+	font-size: 1.4vw;
+}
+
+.contents_grid .slider {
+	border: 1px springgreen solid;
+	padding: 0 4%;
+}
+
+.slider_contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider_contents .slider_item {
+	/* 임시 */
+	border: 1px solid pink;
+	display: flex;
+	flex-direction: column;
+	width: 15vw;
+}
+
+.slider_contents .slider_item img {
+	border-radius: 4px;
 }
