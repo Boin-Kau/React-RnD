@@ -169,13 +169,13 @@ header #btn_end #user_toggle button {
 	width: 100%;
 	position: relative;
 	top: 0;
-	z-index: 1;
 }
 
 #top_contents_wrapper {
 	position: absolute;
 	z-index: 2;
 	top: 9vw;
+	height: 92%;
 	border: 1px solid blue;
 }
 
@@ -261,6 +261,12 @@ header #btn_end #user_toggle button {
 .slider_contents {
 	display: flex;
 	justify-content: space-between;
+}
+
+#famous_contents {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 #famous_contents .slider_contents .slider_item {
