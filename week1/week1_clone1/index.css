@@ -420,11 +420,45 @@ progress::-webkit-progress-value { background: red; }
 
 #bottom_info .sns {
 	display: flex;
-	
+	margin-bottom: 1rem;
 }
 
 #bottom_info .sns a {
 	font-size: 30px;
 	margin-right: 25px;
 	color: gray;
+}
+
+#bottom_info .settings {
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-bottom: 15px;
+}
+
+#bottom_info .settings li {
+	margin-bottom: 16px;
+}
+
+#bottom_info .settings a {
+	color: gray;
+	font-size: 13px;
+}
+
+#bottom_info .service_code button {
+	color: gray;
+	margin-bottom: 20px;
+	padding: .8rem;
+	border: 1px solid gray;
+}
+
+#bottom_info .company_info {
+	margin-bottom: 15px;
+	color: gray;
+	font-size: 11px;
+}
+
+#bottom_info .company_info .copy-text-block {
+	margin-top: 4px;
+	line-height: 1.4;
 }
