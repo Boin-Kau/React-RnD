@@ -93,7 +93,6 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;	
-	border: 1px solid red;
 }
 
 header #main_logo a img {
@@ -235,24 +234,21 @@ header #btn_end #user_toggle button {
 	color: var(--white--color);
 }
 
-/* Main - Playing Contents */
-#famous_contents {
+/* Main - Famous Contents */
 
-}
-
-.type_grid_basic {
+.contents_div {
 	margin-top: 3vw;
 	
 	/* 임시 border */
 	border: 1px dotted skyblue;
 }
 
-.type_grid_basic h2 {
+.contents_div h2 {
 	margin-bottom: 1.5rem;
 	padding: 0 4%;
 }
 
-.type_grid_basic .contents_title {
+.contents_div .contents_title {
 	color: var(--white--color);
 	font-size: 1.4vw;
 }
@@ -267,14 +263,168 @@ header #btn_end #user_toggle button {
 	justify-content: space-between;
 }
 
-.slider_contents .slider_item {
+#famous_contents .slider_contents .slider_item {
 	/* 임시 */
 	border: 1px solid pink;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	width: 15vw;
 }
 
 .slider_contents .slider_item img {
 	border-radius: 4px;
+}
+
+.slider_contents .slider_item .progress_bar {
+	height: 6px;
+	width: 60%;
+	margin-top: 3%;
+}
+
+progress::-webkit-progress-value { background: red; }
+
+
+/* Main - Playing Contents */
+.slider_contents .slider_item a img {
+	width: 15vw;
+}
+
+#top10_contents .slider_item {
+	border: 1px solid pink;
+	width: 15vw;
+}
+
+#top10_contents .slider_item a {
+	display: flex;
+}
+
+
+#top10_contents .slider_item img {
+	width: 50%;
+}
+
+/* Main - my favorite category */
+#my_favorite_category_contents .slider_contents .slider_item {
+	width: 12.5vw;
+	height: 12.5vw;
+	position: relative;
+}
+
+#my_favorite_category_contents .blur {
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	position: absolute;
+}
+
+#my_favorite_category_contents .slider_item_title {
+	color: var(--white--color);
+	font-size: 1.5vw;
+	z-index: 3;
+	position: absolute;
+	left: 20px;
+	bottom: 18px;
+}
+
+.slider_contents .item1 .blur,
+.slider_contents .item3 .blur,
+.slider_contents .item5 .blur,
+.slider_contents .item7 .blur {
+	background: linear-gradient(0deg, rgb(106, 155, 55), rgba(106, 155, 55, 0.2));
+}
+
+.slider_contents .item2 .blur,
+.slider_contents .item4 .blur,
+.slider_contents .item6 .blur {
+	background: linear-gradient(0deg, rgb(40, 104, 167), rgba(40, 104, 167, 0.2));
+}
+
+
+
+#my_favorite_category_contents .slider_item_img_grid {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 4px;
+	position: absolute;
+	display: grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+}
+
+#my_favorite_category_contents .img_grid_item {
+	background-size: cover;
+}
+
+#my_favorite_category_contents .item1 .grid_item1,
+#my_favorite_category_contents .item3 .grid_item1,
+#my_favorite_category_contents .item5 .grid_item1,
+#my_favorite_category_contents .item7 .grid_item1 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABRoXrAmJwyv-V8F0krn1Z5VqBTzZ-O7WopPmFx7B1yYeDHO9Q8un9UseqzNfu0IM30CvMy2yxwPKcqGFb9NkssQN97TmFrC1Fhr4jga4lU64qwgXTA.webp?r=ac5);
+}
+
+#my_favorite_category_contents .item1 .grid_item2,
+#my_favorite_category_contents .item3 .grid_item2,
+#my_favorite_category_contents .item5 .grid_item2,
+#my_favorite_category_contents .item7 .grid_item2 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABfRvdxJloGPwtQc5vGK857hUEUTbwYzpR28WtibJVT6Q0_Le5B72qxW9_fKnOIYLJ9T6Wc5hg4_XMlRsp6KiOr-dUa6ARV08GQyS8YG3Y_-xaoYiKQ.webp?r=328);
+}
+
+#my_favorite_category_contents .item1 .grid_item3,
+#my_favorite_category_contents .item3 .grid_item3,
+#my_favorite_category_contents .item5 .grid_item3,
+#my_favorite_category_contents .item7 .grid_item3 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABZsOP49GCnuRKZNdNx0ZhL_QXOeKi0QQcTDhKjajMqRqommE2IUURr6B1fj1CPrXzG7QnuOY8fyeLPO-RFijC5NsqUVTJjeH5vjk_L-4W983Nw4wRw.webp?r=dd3);
+}
+
+#my_favorite_category_contents .item1 .grid_item4,
+#my_favorite_category_contents .item3 .grid_item4,
+#my_favorite_category_contents .item5 .grid_item4,
+#my_favorite_category_contents .item7 .grid_item4 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABeTJEIWnErd5YYM9VHte3iz5irQB3NJbiJL40jgRcyGT5uae-Yv7IidQ2-JylwkLBQ2edJOuTUagQcBq3_yDETU5rtBCr_zpXNDVC4PTgmgosAaOgA.webp?r=99a);
+}
+
+
+#my_favorite_category_contents .item2 .grid_item1,
+#my_favorite_category_contents .item4 .grid_item1,
+#my_favorite_category_contents .item6 .grid_item1 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABc3fDiYQGHagvbok5c-t_zAcJyHMOJHyO1GTbWL5BX74tjl_SxbKGr5excQjVCuK-H7pRSLE1x2M-74vIkgd1OwgZrm8ZHatGwEPfauxUParVYXmVQ.webp?r=8a5);
+}
+
+#my_favorite_category_contents .item2 .grid_item2,
+#my_favorite_category_contents .item4 .grid_item2,
+#my_favorite_category_contents .item6 .grid_item2 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABaHuSUfJpYcfiPC-psOQyA0Vj8MOdTItxFYackypaX1QAivZqcXCKKd7NE7XS5qI8FJwe2k0uSFSDYXyBo9MUtgq3u6Q8snjliQIEh98GAQkWLq6NQ.webp?r=dd5);
+}
+
+#my_favorite_category_contents .item2 .grid_item3,
+#my_favorite_category_contents .item4 .grid_item3,
+#my_favorite_category_contents .item6 .grid_item3 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABTVqsmE-Z4zAGUJ0WCaHzlSMSJhq7t2vhhYm5zAD2P-6mcae__jYSmeV8Lzbhra6OPO4lvLV1Vx2zlzYt9XLLhFJr2nCiRVzaZFTtzGLqhFhBH9u2A.webp?r=ff4);
+}
+
+#my_favorite_category_contents .item2 .grid_item4,
+#my_favorite_category_contents .item4 .grid_item4,
+#my_favorite_category_contents .item6 .grid_item4 {
+	background-image: url(https://occ-0-1361-2219.1.nflxso.net/dnm/api/v6/1lcgfy_NA26l7dfd356LqCUdNPM/AAAABeuI6yze1hN0ybVY0poIHOd845Hrtus4SY8SJC6w6aXj5rNr6dAhWZzsczIaZ1BKwK9OaP2nVpdBlfJwfNb-avcBdOqyValEWmU-nSeNp1jG462dsg.webp?r=7db);
+}
+
+#bottom_info {
+	margin: 70px auto 0;
+	border: 1px solid burlywood;
+	padding: 0 4%;
+	max-width: 980px;
+}
+
+#bottom_info .sns {
+	display: flex;
+	
+}
+
+#bottom_info .sns a {
+	font-size: 30px;
+	margin-right: 25px;
+	color: gray;
 }
