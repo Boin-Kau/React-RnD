@@ -266,7 +266,7 @@ header #btn_end #user_toggle button {
 #famous_contents {
 	width: 100%;
 	position: absolute;
-	bottom: 0;
+	bottom: 2vw;
 }
 
 #famous_contents .slider_contents .slider_item {
