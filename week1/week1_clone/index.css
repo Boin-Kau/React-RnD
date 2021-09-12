@@ -60,6 +60,7 @@ table {
 	/* margin */
 	--margin--size:20px;
 }
+
 html {
 	font-size: 10px;
 }
@@ -117,6 +118,7 @@ header #category ul li a {
 
 header #category ul li a.active {
 	color: var(--white--color);
+	cursor: default;
 }
 
 header #btn_end {
@@ -176,7 +178,7 @@ header #btn_end #user_toggle button {
 	z-index: 2;
 	top: 9vw;
 	height: 92%;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
 
 #top_img_metadata {
@@ -184,10 +186,6 @@ header #btn_end #user_toggle button {
 	width: 36%;
 }
 
-#top_img_metadata_title {
-	/* 임시 border */
-	border: 1px solid red;
-}
 
 #top_img_metadata_title img {
 	min-height: 13.2vw;
@@ -199,14 +197,14 @@ header #btn_end #user_toggle button {
 	color: var(--white--color);
 	font-size: 1.4vw;
 	line-height: normal;
-	/* 임시 border */
-	border: 1px solid yellow;
+	/* 임시 border
+	border: 1px solid yellow; */
 }
 
 #top_img_metadata_btns {
 	margin-top: 1.5vw;
-	/* 임시 border */
-	border: 1px solid orange;
+	/* 임시 border
+	border: 1px solid orange; */
 	display: flex;
 }
 
@@ -239,8 +237,8 @@ header #btn_end #user_toggle button {
 .contents_div {
 	margin-top: 3vw;
 	
-	/* 임시 border */
-	border: 1px dotted skyblue;
+	/* 임시 border
+	border: 1px dotted skyblue; */
 }
 
 .contents_div h2 {
@@ -254,7 +252,7 @@ header #btn_end #user_toggle button {
 }
 
 .contents_grid .slider {
-	border: 1px springgreen solid;
+	/* border: 1px springgreen solid; */
 	padding: 0 4%;
 }
 
@@ -270,8 +268,8 @@ header #btn_end #user_toggle button {
 }
 
 #famous_contents .slider_contents .slider_item {
-	/* 임시 */
-	border: 1px solid pink;
+	/* 임시
+	border: 1px solid pink; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -288,7 +286,8 @@ header #btn_end #user_toggle button {
 	margin-top: 3%;
 }
 
-progress::-webkit-progress-value { background: red; }
+progress::-webkit-progress-bar { background-color: red; }
+progress::-webkit-progress-value { background-color: red; }
 
 
 /* Main - Playing Contents */
@@ -297,7 +296,7 @@ progress::-webkit-progress-value { background: red; }
 }
 
 #top10_contents .slider_item {
-	border: 1px solid pink;
+	/* border: 1px solid pink; */
 	width: 15vw;
 }
 
@@ -419,7 +418,7 @@ progress::-webkit-progress-value { background: red; }
 
 #bottom_info {
 	margin: 70px auto 0;
-	border: 1px solid burlywood;
+	/* border: 1px solid burlywood; */
 	padding: 0 4%;
 	max-width: 980px;
 }

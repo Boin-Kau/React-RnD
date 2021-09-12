@@ -1,0 +1,17 @@
+#img_wrap {
+    border: 1px solid blue;
+
+    height: 200px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.img_content {
+    height: 200px;
+    flex: 0 0 auto;
+
+    margin-right: 10px;
+    /* border: 1px solid red; */
+}
