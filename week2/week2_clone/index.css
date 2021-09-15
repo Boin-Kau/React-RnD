@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Css Customize start!  */
+:root {
+	/* Color */
+	--black--color:#141414;
+	--white--color:#fff;
+	--dark--gray--color:#e5e5e5;
+	--gray--btn--color:rgba(109,109,110,0.7);
+
+	/* Font Size */
+	--font--extra--large:20px;
+	--font--large:18px;
+	--font--extra--medium:16px;
+	--font--medium:14px;
+
+	/* margin */
+	--margin--size:20px;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: black;
+	width: 100%;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+a {
+  /* a태그 밑줄 제거 */
+  text-decoration: none;
+}
+
+/* Header Start! */
+.main_header {
+	display: flex;
+	align-items: center;
+	padding: 0 4%;
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	right: 0;	
+  /* 임시 border */
+  border: 1px red solid;
+}
+
+header {
+  height: 68px;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    height: 41px;
+  }
+
+  header #btn_end #user_toggle button {
+    display: none;
+  }
+}
+
+#main_logo a img {
+    width: 92.5px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+header #category {
+	flex: 1;
+}
+
+header #category ul {
+	display: flex;
+}
+
+header #category #category_menu {
+  display: none;
+}
+
+header #category ul li a {
+	margin-left: var(--margin--size);
+	color: var(--dark--gray--color);
+	font-size: var(--font--medium);
+}
+
+header #category ul li i {
+  margin-left: calc(var(--margin--size) / 4);
+  color: var(--dark--gray--color);
+	font-size: var(--font--medium);
+}
+
+@media screen and (max-width: 885px) {
+  header #category #category_menu {
+    display: flex;
+  }
+
+  header #category .category_not_menu {
+    display: none;
+  }
+}
+
+header #category ul li a.active {
+	color: var(--white--color);
+	cursor: default;
+}
+
+header #btn_end {
+	display: flex;
+	align-items: center;
+}
+
+header #btn_end a {
+	color: var(--white--color);
+}
+
+header #btn_end .btn_end_child {
+	margin-right: var(--margin--size);
+}
+
+header #btn_end #search_btn {
+	font-size: var(--font--large);
+	padding: 0 6px;
+}
+
+header #btn_end #kids {
+	font-size: var(--font--medium);
+}
+
+@media screen and (max-width: 1100px) {
+  header #btn_end #kids {
+    display: none;
+  }
+}
+
+header #btn_end #notification {
+	font-size: var(--font--extra--large);
+	padding: 0 6px;
+}
+
+header #btn_end #user_toggle {
+	display: flex;
+}
+
+header #btn_end #user_toggle img {
+	border-radius: 4px;
+}
+
+header #btn_end #user_toggle button {
+	color: var(--white--color);
+	margin-left: calc(var(--margin--size) / 3);
+	font-size: var(--font--extra--medium);
+}
+
+/* Header 끝 */
+
+/* Main 시작 */
