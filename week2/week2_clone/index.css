@@ -92,7 +92,7 @@ a {
 	left: 0;
 	right: 0;	
   /* 임시 border */
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 header {
@@ -201,6 +201,205 @@ header #btn_end #user_toggle button {
 	font-size: var(--font--extra--medium);
 }
 
+header #btn_end #user_toggle button:hover {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+} 
+
+
+
+
+
 /* Header 끝 */
 
 /* Main 시작 */
+
+#top_contents img {
+	width: 100vw;
+  height: 100vh;
+	position: relative;
+	top: 0;
+}
+
+#top_contents_wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  
+  /* border: 1px blue solid; */
+}
+
+#top_img_metadata {
+  position: relative;
+  top: 9vw;
+  left: 4%;
+	width: 36%;
+  /* border: 1px green solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+#top_img_metadata .top_img_metadata_title {
+  width: 100%;
+  height: 13.2vw;
+	margin-bottom: 1.2vw;
+}
+
+#top_img_metadata_contents {
+  margin-top: .5vw;
+	color: var(--white--color);
+	font-size: 1.4vw;
+	line-height: normal;
+	/* 임시 border */
+	/* border: 1px solid yellow;  */
+}
+
+#top_img_metadata_btns {
+	margin-top: 1.5vw;
+	/* 임시 border
+	border: 1px solid orange; */
+	display: flex;
+}
+
+#top_img_metadata_btns .metadata_btn {
+	padding: 1.3rem 3.7rem 1.3rem 3.3rem;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+#top_img_metadata_btns #play_link #play_btn {
+	background-color: var(--white--color);
+	color: var(--black--color);
+	display: flex;
+}
+
+#top_img_metadata_btns .btn_space {
+	width: 1rem;
+}
+
+#top_img_metadata_btns #detail {
+	display: flex;
+	background-color: var(--gray--btn--color);
+	color: var(--white--color);
+}
+
+.contents_div {
+  margin-top: 3vw;
+}
+
+.contents_div h2 {
+	margin-bottom: 1.5rem;
+	padding: 0 4%;
+}
+
+.contents_div .contents_title {
+	color: var(--white--color);
+	font-size: 1.4vw;
+}
+
+#famous_contents {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.contents_grid,
+#famous_contents .contents_grid {
+  /* border: 1px solid brown; */
+  width: 100%;
+}
+
+.contents_grid .slider {
+	padding: 0 4%;
+}
+
+.slider_contents {
+	display: flex;
+  flex-wrap: nowrap;
+  overflow-x: visible;
+  overflow: scroll;
+	justify-content: space-between;
+}
+
+.slider_contents .slider_item,
+#famous_contents .slider_contents .slider_item {
+  flex: 0 0 auto;
+}
+
+.slider_contents .slider_item img {
+	border-radius: 4px;
+  padding: 0 2px;
+  width: 15vw;
+}
+
+#famous_contents .slider_contents .slider_item img {
+  border-radius: 4px;
+  padding: 0 2px;
+  width: 15vw;
+  height: 15vh;
+}
+
+
+
+
+
+/* Footer  */
+
+#bottom_info {
+	margin: 70px auto 0;
+	/* border: 1px solid burlywood; */
+	padding: 0 4%;
+	max-width: 980px;
+}
+
+#bottom_info .sns {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+#bottom_info .sns a {
+	font-size: 30px;
+	margin-right: 25px;
+	color: gray;
+}
+
+#bottom_info .settings {
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-bottom: 15px;
+}
+
+#bottom_info .settings li {
+	margin-bottom: 16px;
+}
+
+#bottom_info .settings a {
+	color: gray;
+	font-size: 13px;
+}
+
+#bottom_info .service_code button {
+	color: gray;
+	margin-bottom: 20px;
+	padding: .8rem;
+	border: 1px solid gray;
+}
+
+#bottom_info .company_info {
+	margin-bottom: 15px;
+	color: gray;
+	font-size: 11px;
+}
+
+#bottom_info .company_info .copy-text-block {
+	margin-top: 4px;
+	line-height: 1.4;
+}
+
