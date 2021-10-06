@@ -1,0 +1,52 @@
+.footer {
+  margin: 70px auto 0;
+	border: 1px solid burlywood;
+	padding: 0 4%;
+	max-width: 980px;
+}
+
+.footer .sns {
+  display: flex;
+	margin-bottom: 10px;
+}
+
+.footer .sns .link {
+  font-size: 30px;
+	margin-right: 25px;
+	color: gray;
+}
+
+.footer .settings {
+  display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-bottom: 15px;
+}
+
+.footer .settings li {
+  margin-bottom: 16px;
+}
+
+.footer .settings a {
+	color: gray;
+	font-size: 13px;
+  text-decoration: none;
+}
+
+.footer .service_code button {
+  color: gray;
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.footer .company_info {
+  margin-bottom: 15px;
+	color: gray;
+	font-size: 11px;
+}
+
+.footer .company_info .copy_text_block {
+  margin-top: 4px;
+	line-height: 1.4;
+}
