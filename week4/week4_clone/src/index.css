@@ -262,6 +262,14 @@ header {
 	font-size: 18px;
 }
 
+/* Nearby Start */
+#nearby_container {
+	padding: 0 80px;
+	margin: 24px 0;
+	
+}
+
+
 /* Result Start */
 #result_container{
 	margin-top: 80px;

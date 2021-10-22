@@ -15,6 +15,7 @@ const TopContent = () => {
   }
   const onClickSearchButton = () => {
     history.push(`/result/${inputText}`);
+    // history.push에 여러 다른 인자들을 추가할 수 있다! => 검색해보기
   }
 
   return (

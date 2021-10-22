@@ -12,7 +12,6 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/result/:inputText' exact component={Result}/>
-
       </Switch>
       <Footer/>
     </BrowserRouter>
