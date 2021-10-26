@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id":1,
+      "name":"서울",
+      "description":"차로 15분 거리",
+      "img":"https://a0.muscache.com/im/pictures/71e23854-a3c7-491c-b715-6e86233a293f.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":2,
+      "name":"부산",
+      "description":"차로 5시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":3,
+      "name":"양양군",
+      "description":"차로 2.5시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":4,
+      "name":"속초시",
+      "description":"차로 2.5시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/71e23854-a3c7-491c-b715-6e86233a293f.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":5,
+      "name":"대구",
+      "description":"차로 4시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":6,
+      "name":"완주군",
+      "description":"차로 3시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/7253e011-7c22-48fd-b75d-d0da35372397.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":7,
+      "name":"전주시",
+      "description":"차로 3시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=240"
+    },
+    {
+      "id":8,
+      "name":"고성군",
+      "description":"차로 3시간 거리",
+      "img":"https://a0.muscache.com/im/pictures/71e23854-a3c7-491c-b715-6e86233a293f.jpg?im_q=medq&im_w=240"
+    }
+  ]
+}

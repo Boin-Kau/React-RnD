@@ -13,8 +13,6 @@ const PageB = () => {
       <div>{email}</div>
       <div>{password}</div>
     </>
-    
-
   )
 }
 
