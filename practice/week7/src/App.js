@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import Accomodation from './pages/Accomodation';
+import Header from './components/Header';
 
 function App() {
   return (
