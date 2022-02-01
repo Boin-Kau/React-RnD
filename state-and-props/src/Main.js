@@ -7,7 +7,6 @@ const Main = () => {
   // STATE
   const [price, setPrice] = useState('');
   const [discount, setDiscount] = useState('');
-  const [result, setResult] = useState('');
 
   // FUNCTION
   const onChangePrice = (e) => {
@@ -15,9 +14,6 @@ const Main = () => {
   }
   const onChangeDiscount = (e) => {
     setDiscount(e.target.value);
-  }
-  const onChangeResult = (e) => {
-    setResult(price - discount);
   }
   
   // LOG
@@ -66,10 +62,9 @@ const Main = () => {
           <span>최종 금액</span>
         </div>
         <div className="itemWrap">
-          <input type="number" placeholder="최종금액" value={result} onChange={onChangeResult}  />
+          <input type="number" placeholder="최종금액" value={price-discount} disabled/>
           <span>￦(원)</span>
         </div>
-        
       </div>
     </div>
   );
